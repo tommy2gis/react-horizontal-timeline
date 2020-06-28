@@ -49,7 +49,7 @@ class HorizontalTimeline extends React.Component {
     // Convert the distances and dates to events
     const events = distances.map((distance, index) => ({
       distance,
-      label: props.getLabel(props.values[index], index),
+      label: props.getLabel(props.values[index].title, index),
       date: props.values[index],
     }));
 
